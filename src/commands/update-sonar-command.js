@@ -27,6 +27,8 @@ class UpdateSonarCommand {
         result = result.replace('BRANCH', self.branch);
         if (self.target) {
           result = result.replace('TARGET', `sonar.branch.target=${self.target}`);
+        } else {
+          result = result.replace('TARGET', '');
         }
 
         fs.writeFile(self.filePath, result, encoding, (writeError) => {
