@@ -20,7 +20,13 @@
     "license": "MIT",
     "homepage": "https://github.com/matthewbill/mdb-build-tools#readme",
     "bugs": "https://github.com/matthewbill/mdb-build-tools/issues/",
-    "dependencies": {},
+    "dependencies": {
+        "commander": "2.19.0",
+        "mdb-cli-framework": "0.1.0",
+        "mdb-core": "0.1.0",
+        "mdb-logging": "0.1.0",
+        "winston": "3.2.1"
+    },
     "devDependencies": {
         "jsdoc": "3.5.5",
         "jest": "23.5.0",
@@ -30,5 +36,8 @@
         "eslint-plugin-import": "2.14.0",
         "eslint-plugin-jsx-a11y": "6.1.1",
         "eslint-plugin-react": "7.11.1"
+    },
+    "bin": {
+        "mdb-bt": "./bin/index.js"
     }
 }
